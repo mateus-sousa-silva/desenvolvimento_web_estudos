@@ -6,11 +6,12 @@
     <title>Aula prática</title>
     <script>
         function teste(valor){
-          return  alert("O valor do botão é: "+valor)
+          document.getElementById("click-me").innerHTML = "O valor do botão é: "+valor
+          document.getElementById("corpo").style.backgroundColor = "red"
         }
     </script>
 </head>
-<body>
+<body id="corpo">
     <p>Bem vindo, ao meu novo site</p>
     <p>Aqui você aprenderá sobre html e como desenvolver na web</p>
     <p>desde o básico até o avançado</p>
@@ -25,5 +26,6 @@
     <button value="click-me" onclick="teste(value)">
         click-me
     </button>
+    <p id="click-me"></p>
 </body>
 </html>
